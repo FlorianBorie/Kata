@@ -59,8 +59,6 @@ Utilisation de tests unitaires
 
 - Réduire updateQuality au niveau des boucles for() et des conditions if()
 
-- Remplacement des variables « var » par « let » ou « const »
-
 - Ajout de la nouvelle fonctionnalité "Conjured"
 
 
@@ -75,8 +73,6 @@ Utilisation de tests unitaires
 
 2° Différencier les classes pour avoir un comportement autonome 
 
-3° Remplacement des variables « var » par « let » ou « const »
+3° Réduire updateQuality au niveau des boucles for() et des conditions if()
 
-4° Réduire updateQuality au niveau des boucles for() et des conditions if()
-
-5° Ajout de la nouvelle fonctionnalité "Conjured"
+4° Ajout de la nouvelle fonctionnalité "Conjured"

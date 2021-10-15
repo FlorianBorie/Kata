@@ -42,8 +42,8 @@ Juste une précision, un produit ne peut jamais voir sa qualité augmenter au-de
 ---------------------------------------------------STRATÉGIE---------------------------------------------------------------------
 
 
-Utilisation de tests unitaires
 
+Utilisation de snapshots pour répertorier le résultat des tests
 
 
 
@@ -61,6 +61,8 @@ Utilisation de tests unitaires
 
 - Ajout de la nouvelle fonctionnalité "Conjured"
 
+- fichier snapshots pour comparer les résultats des tests tout au long des modifications
+
 
 
 
@@ -68,11 +70,12 @@ Utilisation de tests unitaires
 ---------------------------------------------------PRIORISATION------------------------------------------------------------------
 
 
+1° création fichier snapshots
 
-1° Suppression du code smells
+2° Suppression du code smells
 
-2° Différencier les classes pour avoir un comportement autonome 
+3° Différencier les classes pour avoir un comportement autonome 
 
-3° Réduire updateQuality au niveau des boucles for() et des conditions if()
+4° Réduire updateQuality au niveau des boucles for() et des conditions if()
 
-4° Ajout de la nouvelle fonctionnalité "Conjured"
+5° Ajout de la nouvelle fonctionnalité "Conjured"

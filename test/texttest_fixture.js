@@ -1,9 +1,9 @@
 
-const AgedBrie = require("../src/agedBrie");
-const Backstage = require("../src/backstage");
-const Dexterity = require("../src/dexterity");
-const Elixir = require("../src/elixir");
-const Sulfuras = require("../src/sulfuras");
+const AgedBrie = require("./ItemsClass/agedBrie");
+const Backstage = require("./ItemsClass/backstage");
+const Dexterity = require("./ItemsClass/dexterity");
+const Elixir = require("./ItemsClass/elixir");
+const Sulfuras = require("./ItemsClass/sulfuras");
 const { Shop, Item } = require("../src/gilded_rose");
 
 const items = [

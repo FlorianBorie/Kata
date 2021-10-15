@@ -1,11 +1,12 @@
 
 const AgedBrie = require("../src/agedBrie");
 const Dexterity = require("../src/dexterity");
+const Elixir = require("../src/elixir");
 const { Shop, Item } = require("../src/gilded_rose");
 
 const items = [
   new Dexterity(10, 20),
-  new Item("Elixir of the Mongoose", 5, 7),
+  new Elixir(5, 7),
   new AgedBrie(2, 0),
   new Item("Sulfuras, Hand of Ragnaros", 0, 80),
   new Item("Sulfuras, Hand of Ragnaros", -1, 80),

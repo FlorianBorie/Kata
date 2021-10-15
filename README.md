@@ -42,7 +42,7 @@ Juste une précision, un produit ne peut jamais voir sa qualité augmenter au-de
 ---------------------------------------------------STRATÉGIE---------------------------------------------------------------------
 
 
-Utilsation de tests unitaires
+Utilisation de tests unitaires
 
 
 

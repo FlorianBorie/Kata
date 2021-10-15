@@ -3,13 +3,14 @@ const AgedBrie = require("../src/agedBrie");
 const Dexterity = require("../src/dexterity");
 const Elixir = require("../src/elixir");
 const { Shop, Item } = require("../src/gilded_rose");
+const Sulfuras = require("../src/sulfuras");
 
 const items = [
   new Dexterity(10, 20),
   new Elixir(5, 7),
   new AgedBrie(2, 0),
-  new Item("Sulfuras, Hand of Ragnaros", 0, 80),
-  new Item("Sulfuras, Hand of Ragnaros", -1, 80),
+  new Sulfuras(0, 80),
+  new Sulfuras(-1, 80),
   new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
   new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
   new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),

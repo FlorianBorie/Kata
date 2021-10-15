@@ -72,9 +72,9 @@ Utilisation de snapshots pour répertorier le résultat des tests
 
 1° création fichier snapshots
 
-2° Suppression du code smells
+2° Différencier les classes pour avoir un comportement autonome 
 
-3° Différencier les classes pour avoir un comportement autonome 
+3° Suppression du code smells
 
 4° Réduire updateQuality au niveau des boucles for() et des conditions if()
 

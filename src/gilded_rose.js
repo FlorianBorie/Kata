@@ -19,19 +19,13 @@ class Shop {
           }
         }
       } else {
+        if (this.items[i].name == 'Aged Brie') {
+          this.updateAgedBrie(this.items[i])
+        }
         if (this.items[i].quality < 50) {
           this.items[i].quality = this.items[i].quality + 1;
           if (this.items[i].name == 'Backstage passes to a TAFKAL80ETC concert') {
-            if (this.items[i].sellIn < 11) {
-              if (this.items[i].quality < 50) {
-                this.items[i].quality = this.items[i].quality + 1;
-              }
-            }
-            if (this.items[i].sellIn < 6) {
-              if (this.items[i].quality < 50) {
-                this.items[i].quality = this.items[i].quality + 1;
-              }
-            }
+            this.updateBackstage(this.items[i])
           }
         }
       }
@@ -59,6 +53,27 @@ class Shop {
 
     return this.items;
   }
+  
+  updateAgedBrie(item) {
+    if (item.quality < 50) {
+      item.quality = item.quality + 1;
+    }
+  }
+
+  updateBackstage(item) {
+    if (item.sellIn < 11) {
+      if (item.quality < 50) {
+        item.quality = item.quality + 1;
+      }
+    }
+    if (item.sellIn < 6) {
+      if (item.quality < 50) {
+        item.quality = item.quality + 1;
+      }
+    }
+  }
+
+
 }
 
 module.exports = {

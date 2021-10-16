@@ -15,7 +15,7 @@ class Shop {
    this.items.forEach((item) => {
       switch(item.name) {
         case 'Aged Brie': 
-          item = this.updateAgedBrie(item)
+          item.update()
           break;
         case 'Backstage passes to a TAFKAL80ETC concert': 
           item = this.updateBackstage(item)
@@ -29,19 +29,6 @@ class Shop {
       }
     })
     return this.items;
-  }
-  
-  updateAgedBrie(item) {
-    item.sellIn = item.sellIn - 1
-    if (item.sellIn > 0) {
-      item.quality = item.quality + 1
-    } else {
-      item.quality = item.quality + 2
-    }
-    if (item.quality > 50) {
-      item.quality = 50
-    }
-    return item
   }
 
   updateBackstage(item) {

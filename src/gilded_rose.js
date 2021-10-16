@@ -10,26 +10,24 @@ class Shop {
   constructor(items=[]){
     this.items = items;
   }
-  
+
   updateQuality() {
-    for (let i = 0; i < this.items.length; i++) {
-      switch(this.items[i].name) {
+   this.items.forEach((item) => {
+      switch(item.name) {
         case 'Aged Brie': 
-          this.items[i] = this.updateAgedBrie(this.items[i])
+          item = this.updateAgedBrie(item)
           break;
         case 'Backstage passes to a TAFKAL80ETC concert': 
-          this.items[i] = this.updateBackstage(this.items[i])
+          item = this.updateBackstage(item)
           break;
-        case 'Sulfuras, Hand of Ragnaros': 
-          this.items[i] = this.updateSulfuras(this.items[i])
+        case 'Sulfuras, Hand of Ragnaros':
+          item = this.updateSulfuras(item)
           break;
         default:
-          this.items[i] = this.updateDexterity(this.items[i])
+          item = this.updateDexterity(item)
           break;
       }
-
-    }
-
+    })
     return this.items;
   }
   

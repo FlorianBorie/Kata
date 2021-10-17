@@ -21,7 +21,7 @@ class Shop {
           item.update()
           break;
         case 'Sulfuras, Hand of Ragnaros':
-          item = this.updateSulfuras(item)
+          item.update()
           break;
         default:
           item = this.updateDexterity(item)
@@ -31,9 +31,6 @@ class Shop {
     return this.items;
   }
 
-  updateSulfuras(item) {
-    return item
-  }
 
   updateDexterity(item) {
     item.sellIn = item.sellIn - 1;
